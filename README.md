@@ -64,7 +64,7 @@ You need Node.js 20+, a Google Cloud API key with the Custom Search API enabled 
 
 <br>
 
-**In the app:** open **Settings → Plugins → MCP servers**, select **Add server**, then add `npx -y mcp-google-custom-search@latest` with `GOOGLE_CUSTOM_SEARCH_API_KEY` and `GOOGLE_CUSTOM_SEARCH_ENGINE_ID`.
+**In the app:** open **Settings → MCP servers**, select **Add server**, choose **STDIO**, enter the command `npx -y mcp-google-custom-search@latest` and environment variables `GOOGLE_CUSTOM_SEARCH_API_KEY`, `GOOGLE_CUSTOM_SEARCH_ENGINE_ID`, then select **Save** and **Restart**.
 
 **From the command line:**
 
@@ -109,7 +109,9 @@ claude mcp list
 
 <br>
 
-Open **Settings → Developer → Edit Config** and add:
+The current official path is **Settings → Extensions**. For a custom desktop extension, open **Advanced settings → Extension Developer → Install Extension…**, select a `.mcpb` file and follow the prompts.
+
+This repository currently publishes an npm stdio package and does not contain a `.mcpb` bundle. For Claude Desktop builds that still support local configuration, use the following JSON stdio configuration as a fallback:
 
 ```json
 {
@@ -126,7 +128,7 @@ Open **Settings → Developer → Edit Config** and add:
 }
 ```
 
-If **Edit Config** is unavailable, edit `~/Library/Application Support/Claude/claude_desktop_config.json` on macOS or `%APPDATA%\Claude\claude_desktop_config.json` on Windows.
+In those builds, save it to `~/Library/Application Support/Claude/claude_desktop_config.json` on macOS or `%APPDATA%\Claude\claude_desktop_config.json` on Windows.
 
 [Claude Desktop MCP documentation](https://support.claude.com/en/articles/10949351-getting-started-with-local-mcp-servers-on-claude-desktop)
 

@@ -64,7 +64,7 @@
 
 <br>
 
-**В приложении:** откройте **Settings → Plugins → MCP servers**, нажмите **Add server**, затем добавьте `npx -y mcp-google-custom-search@latest` с `GOOGLE_CUSTOM_SEARCH_API_KEY` и `GOOGLE_CUSTOM_SEARCH_ENGINE_ID`.
+**В приложении:** откройте **Settings → MCP servers**, нажмите **Add server**, выберите **STDIO**, укажите команду `npx -y mcp-google-custom-search@latest` и переменные окружения `GOOGLE_CUSTOM_SEARCH_API_KEY`, `GOOGLE_CUSTOM_SEARCH_ENGINE_ID`, затем нажмите **Save**, потом **Restart**.
 
 **В командной строке:**
 
@@ -109,7 +109,9 @@ claude mcp list
 
 <br>
 
-Откройте **Settings → Developer → Edit Config** и добавьте:
+Актуальный официальный путь — **Settings → Extensions**. Для пользовательского desktop extension откройте **Advanced settings → Extension Developer → Install Extension…**, выберите файл `.mcpb` и следуйте подсказкам.
+
+Этот репозиторий сейчас публикует npm-пакет со stdio и пока не содержит `.mcpb`. Поэтому используйте приведённый ниже JSON stdio-конфиг как fallback только в сборках Claude Desktop, где ещё поддерживается локальная конфигурация:
 
 ```json
 {
@@ -126,7 +128,7 @@ claude mcp list
 }
 ```
 
-Если **Edit Config** недоступна, отредактируйте `~/Library/Application Support/Claude/claude_desktop_config.json` на macOS или `%APPDATA%\Claude\claude_desktop_config.json` на Windows.
+В таких сборках сохраните его в `~/Library/Application Support/Claude/claude_desktop_config.json` на macOS или `%APPDATA%\Claude\claude_desktop_config.json` на Windows.
 
 [Документация Claude Desktop MCP](https://support.claude.com/en/articles/10949351-getting-started-with-local-mcp-servers-on-claude-desktop)
 
