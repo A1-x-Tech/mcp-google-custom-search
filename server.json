@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.A1-x-Tech/mcp-google-custom-search",
   "title": "Google Custom Search MCP",
-  "description": "MCP server for the Google Custom Search JSON API: web and image search through a Programmable Search Engine.",
+  "description": "MCP server for Google Custom Search: web and image search via a Programmable Search Engine.",
   "websiteUrl": "https://github.com/A1-x-Tech/mcp-google-custom-search#readme",
   "repository": {
     "url": "https://github.com/A1-x-Tech/mcp-google-custom-search",
