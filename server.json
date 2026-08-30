@@ -1,0 +1,55 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.A1-x-Tech/mcp-google-custom-search",
+  "title": "Google Custom Search MCP",
+  "description": "MCP server for the Google Custom Search JSON API: web and image search through a Programmable Search Engine.",
+  "websiteUrl": "https://github.com/A1-x-Tech/mcp-google-custom-search#readme",
+  "repository": {
+    "url": "https://github.com/A1-x-Tech/mcp-google-custom-search",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "mcp-google-custom-search",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_CUSTOM_SEARCH_API_KEY",
+          "description": "Google Cloud API key with the Custom Search API enabled. Treat it as a secret.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "GOOGLE_CUSTOM_SEARCH_ENGINE_ID",
+          "description": "Default Programmable Search Engine id (cx). Tools accept a per-call engine_id override.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CUSTOM_SEARCH_API_BASE",
+          "description": "API root override.",
+          "isRequired": false,
+          "default": "https://customsearch.googleapis.com"
+        },
+        {
+          "name": "GOOGLE_CUSTOM_SEARCH_TIMEOUT_MS",
+          "description": "Per-request timeout in milliseconds.",
+          "isRequired": false,
+          "default": "30000"
+        },
+        {
+          "name": "GOOGLE_CUSTOM_SEARCH_MAX_RETRIES",
+          "description": "Retries on transient errors (429, and 5xx/network — the API is idempotent GETs only).",
+          "isRequired": false,
+          "default": "3"
+        }
+      ]
+    }
+  ]
+}
