@@ -3,8 +3,8 @@
 **English** | [Русский](./README.ru.md)
 
 [![npm](https://img.shields.io/npm/v/mcp-google-custom-search)](https://www.npmjs.com/package/mcp-google-custom-search)
-[![CI](https://github.com/A1-x-Tech/mcp-google-custom-search/actions/workflows/ci.yml/badge.svg)](https://github.com/A1-x-Tech/mcp-google-custom-search/actions/workflows/ci.yml)
 [![Glama](https://glama.ai/mcp/servers/A1-x-Tech/mcp-google-custom-search/badges/score.svg)](https://glama.ai/mcp/servers/A1-x-Tech/mcp-google-custom-search)
+[![CI](https://github.com/A1-x-Tech/mcp-google-custom-search/actions/workflows/ci.yml/badge.svg)](https://github.com/A1-x-Tech/mcp-google-custom-search/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 **A1 Google Custom Search MCP** lets an AI app search the web and images in plain language through your [Programmable Search Engine](https://programmablesearchengine.google.com/). Ask for pages, narrow by language, country, date or site, page through results and pull image files with thumbnails.
