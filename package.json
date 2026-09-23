@@ -1,6 +1,6 @@
 {
   "name": "mcp-google-custom-search",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "MCP server for the Google Custom Search JSON API — web and image search through a Programmable Search Engine with pagination, language/country filters and safe search. For Claude, Cursor, Codex and other AI clients.",
   "mcpName": "io.github.A1-x-Tech/mcp-google-custom-search",
   "type": "module",

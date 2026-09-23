@@ -5,6 +5,16 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and the project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.0] — 2026-09-24
+
+### Changed
+
+- First stable release. The code is unchanged from 0.1.0; the version now states
+  what was already true of it — the tool surface, tool argument shapes,
+  environment variable names and response envelopes are settled, and breaking any
+  of them from here on requires a major bump.
+- `server.json` description shortened to fit the MCP registry's 100-character limit.
+
 ## [0.1.0] — 2026-08-30
 
 ### Added
