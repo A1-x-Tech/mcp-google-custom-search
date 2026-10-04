@@ -1,0 +1,25 @@
+{
+  "name": "mcp-google-custom-search",
+  "displayName": "A1 Google Custom Search MCP",
+  "description": "MCP server for the Google Custom Search JSON API — web and image search through a Programmable Search Engine with pagination, language/country filters and safe search. For Claude, Cursor, Codex and ot",
+  "author": {
+    "name": "Aleksandr Kovalko & Zinnur Temerbekov"
+  },
+  "homepage": "https://github.com/A1-x-Tech/mcp-google-custom-search#readme",
+  "repository": "https://github.com/A1-x-Tech/mcp-google-custom-search",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "google",
+    "custom-search",
+    "programmable-search-engine",
+    "web-search",
+    "image-search",
+    "search",
+    "claude",
+    "cursor",
+    "codex"
+  ],
+  "logo": "assets/a1-logo.svg"
+}
