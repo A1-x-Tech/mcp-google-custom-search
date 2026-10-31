@@ -49,3 +49,5 @@ and the project adheres to [Semantic Versioning](https://semver.org/).
   a dist smoke test with a real MCP handshake, and an opt-in live read-only `npm run smoke`.
 
 [1.1.0]: https://github.com/A1-x-Tech/mcp-google-custom-search/releases/tag/v1.1.0
+[1.0.0]: https://github.com/A1-x-Tech/mcp-google-custom-search/releases/tag/v1.0.0
+[0.1.0]: https://github.com/A1-x-Tech/mcp-google-custom-search/releases/tag/v0.1.0
