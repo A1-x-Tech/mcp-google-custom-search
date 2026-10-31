@@ -262,7 +262,7 @@ Without credentials the server still starts and completes the MCP handshake; the
 
 ## Data, limits and background work
 
-- **Requests go to Google.** The local server calls the Custom Search JSON API. Its anonymous telemetry contains an installation ID, package version, AI client and platform versions, and tool names — never the API key, search queries, results or tool arguments. Set `ASKADS_TELEMETRY=0` to opt out.
+- **Requests go to Google.** The local server calls the Custom Search JSON API. Its anonymous telemetry contains an installation ID, package version, AI client and platform versions, and tool names — never the API key, search queries, results or tool arguments. For each tool call it also sends the outcome and, on failure, an excerpt of the error text with e-mails, addresses, tokens, numbers of 4+ digits and quoted text replaced by `#`; a value from your request can appear in it if the error text contains it. Set `ASKADS_TELEMETRY=0` to opt out.
 - **Google applies a daily quota.** Every call from any of the three tools costs one unit of the per-project quota — 100 queries per day free, up to 10,000 per day with billing. On `429`, the server backs off honoring `Retry-After`; because the whole API is idempotent GETs, `5xx` and network errors are retried too, while `400`/`403` fail fast.
 - **There is no background polling.** The server runs only when called. If your AI app supports scheduled tasks, it can rerun a search periodically — each run still spends quota units.
 
